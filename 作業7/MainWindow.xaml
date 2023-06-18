@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <TextBox x:Name="txtTime" TextWrapping="Wrap" Text="TextBox" Margin="10,10,10,276"/>
+        <TextBox x:Name="txtDate" TextWrapping="Wrap" Text="TextBox" Margin="10,164,330,190"/>
+        <TextBox x:Name="txtWeekDay" TextWrapping="Wrap" Text="TextBox" Margin="475,164,10,190"/>
+        <Button x:Name="btnSetAlert" Content="Button" Margin="10,250,676,144"/>
+        <Button x:Name="btnCancelAlert" Content="Button" Margin="129,250,560,144"/>
+        <ComboBox x:Name="cmbHour" Margin="260,250,450,144"/>
+        <ComboBox x:Name="cmbMin" Margin="355,250,355,144"/>
+        <MediaElement x:Name="meSound" Margin="573,252,68,33" Source="/alert.wav" Volume="1"/>
+
     </Grid>
 </Window>
