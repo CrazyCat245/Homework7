@@ -7,13 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="txtTime" TextWrapping="Wrap" Text="TextBox" Margin="10,10,10,276"/>
-        <TextBox x:Name="txtDate" TextWrapping="Wrap" Text="TextBox" Margin="10,164,330,190"/>
-        <TextBox x:Name="txtWeekDay" TextWrapping="Wrap" Text="TextBox" Margin="475,164,10,190"/>
-        <Button x:Name="btnSetAlert" Content="Button" Margin="10,250,676,144"/>
-        <Button x:Name="btnCancelAlert" Content="Button" Margin="129,250,560,144"/>
-        <ComboBox x:Name="cmbHour" Margin="260,250,450,144"/>
-        <ComboBox x:Name="cmbMin" Margin="355,250,355,144"/>
+        <TextBox x:Name="txtTime" TextWrapping="Wrap" Margin="10,10,10,276" FontSize="72"/>
+        <TextBox x:Name="txtDate" TextWrapping="Wrap" Margin="10,164,330,190" FontSize="48"/>
+        <TextBox x:Name="txtWeekDay" TextWrapping="Wrap" Margin="475,164,10,190" FontSize="48"/>
+        <Button x:Name="btnSetAlert" Content="設定鬧鐘" Margin="10,250,656,134" Click="btnSetAlert_Click"/>
+        <Button x:Name="btnCancelAlert" Content="取消鬧鐘" Margin="150,250,520,134" Click="btnCancelAlert_Click"/>
+        <ComboBox x:Name="cmbHour" Margin="285,260,425,134" />
+        <ComboBox x:Name="cmbMin" Margin="380,260,330,134"/>
         <MediaElement x:Name="meSound" Margin="573,252,68,33" Source="/alert.wav" Volume="1"/>
 
     </Grid>
